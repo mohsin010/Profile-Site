@@ -1,3 +1,22 @@
+#app_root{
+  /* max-width: 960px; */
+  /* min-width: 500px; */
+  /* background-color: red; */
+  width: 75%;
+  /* min-width: 480px; */
+  margin-left: calc(50% - 36.5%);
+  margin-top: 80px;
+  user-select: none;
+
+}
+@media screen and (max-width: 480px) {
+  body {
+    width: 500px;
+    margin-left: calc(50% - 220px);
+    /* background-color: olive; */
+    /* color: white; */
+  }
+}
 .App {
   text-align: center;
 }
