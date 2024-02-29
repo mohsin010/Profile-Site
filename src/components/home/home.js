@@ -1,9 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
-import { Button } from 'antd';
+import { Space, Table, Tag, Button } from 'antd';
 
 
+// Table data
+const columns = [
+    {
+        title: 'Project Type',
+        dataIndex: 'type',
+        key: 'type',
+        render: (text) => <p>{text}</p>,
+    },
+    {
+        title: 'Project Title',
+        dataIndex: 'title',
+        key: 'title',
+    }
+];
+const data = [
+    {
+        type: 'Research',
+        title: 'Blockchain Backed Tokenization of Personal Identifiable Information of Medical Image Data Using OpenCV',
+    },
+    {
+        type: 'Research',
+        title: 'Development of Medical Data Sharing and Analysis System based on ML and Blockchain Technology',
+    },
+    {
+        type: 'Industry',
+        title: 'Aapki Dokan - Online Marketplace for Grocery Shopping',
+    },
+    {
+        type: 'Industry',
+        title: 'Smart Learners - Online Education Platform ',
+    },
+    {
+        type: 'Industry',
+        title: 'Zacarta - Pre Pickup Order Placement Service for a Store Chain',
+    }
+];
 
 class Home extends React.Component {
     render() {
@@ -11,13 +47,13 @@ class Home extends React.Component {
             <div id='main_home'>
                 <div id='title_container'>
                     <div>
-                        <h1 id='title_txt'>
+                        <h1 id='title_txt' className='theme_color'>
                             Software Engineer
                         </h1>
                     </div>
                     <div>
-                        <p className='title-txt'>
-                            Hi, my name is Muhammad Mohsin Sheraz and i'm self-taught developer from Pakistan. This blog will be used
+                        <p className='title-txt text-dec'>
+                            Hi, i am Muhammad Mohsan Sheeraz based in Australia. i am self-taught developer from Pakistan. This blog will be used
                             to track my progress as i continue my career and grow.
                         </p>
                     </div>
@@ -28,14 +64,14 @@ class Home extends React.Component {
 
                     </div>
                 </div>
-                <div className='containers'>
+                {/* <div className='containers'>
                     <div >
                         <h1>
-                            Latest Posts
+                            Popular Posts
                         </h1>
 
                     </div>
-                    <div>
+                    <div className='blog_div'>
                         <table className='tbl_blog'>
                             <tr>
                                 <td className='heading'>
@@ -88,15 +124,16 @@ class Home extends React.Component {
                     </div>
 
 
-                </div>
+                </div> */}
                 <div className='containers'>
                     <div >
-                        <h1>
+                        <h1 className='theme_color'>
                             Latest Projects
                         </h1>
                     </div>
                     <div className='fyp'>
-                        <table className='tbl_fyp'>
+                        <Table columns={columns} dataSource={data} />
+                        {/* <table className='tbl_fyp'>
                             <tr>
                                 <td className='heading'>
                                     Final Year Project Management System
@@ -108,7 +145,7 @@ class Home extends React.Component {
                                     </Button>
                                 </td>
                             </tr>
-                        </table>
+                        </table> */}
                     </div>
 
                 </div>

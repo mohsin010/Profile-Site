@@ -9,12 +9,13 @@ body {
   /* background-color: #DFF5E3; */
 
   /* color: #006400; */
-  background: #f4f4f4;
+  /* background: #f4f4f4; */
   background: -webkit-linear-gradient(0deg, #f4f4f4 0%, #f5fff8 50%, #a0eeff 100%);
   background: linear-gradient(0deg, #ccf4fd 10%, #f5fff8 50%, #a0eeff 100%);
 
 
-
+  overflow-y: scroll;
+  min-height: 100vh;
   /* Olive color */
   /* background: #b4ce91;
   background: -webkit-linear-gradient(324deg, #b4ce91 0%, rgba(175, 194, 174, 0.71) 50%, #afc2ae 100%);
@@ -24,13 +25,19 @@ body {
   /* Adjust colors and direction as needed */
   margin: 0;
   padding: 0;
+}
 
+.text-dec {
+  /* font-size: 120%; */
+  word-break: normal;
+  color: rgb(97, 97, 99);
+}
 
+.theme_color {
+  color: rgb(0, 145, 160);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-

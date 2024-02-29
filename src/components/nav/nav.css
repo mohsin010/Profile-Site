@@ -1,8 +1,10 @@
 #main_nav {
     width: 100%;
     display: flex;
+    /* justify-items: center; */
     margin: auto;
     /* background-color: red; */
+    justify-content: space-between;
 }
 
 #home {
@@ -29,15 +31,20 @@
 #menu {
     /* background-color: blue; */
     font-family: 'Crimson Text', serif;
-    width: 25%;
-    margin: auto;
-    margin-left: calc(50% - 30.5%);
-    text-align: center;
-    background-color: none;
+    /* width: 22%; */
+    /* min-width: fit-content; */
+    /* margin: auto; */
+    /* margin-left: calc(50% - 30.5%); */
+    /* align-self: center; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-left: calc(0% - 11%);
+    /* background-color: green !important; */
 }
 
 #menu>ul {
     border-bottom: none;
+    background-color: transparent !important;
 
 }
 

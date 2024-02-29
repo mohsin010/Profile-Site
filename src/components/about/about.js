@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './about.css';
 import pp from '../../data/0.jpg';
 
+const development = ['Blockchain & Digital Currencies,', 'Smart Contracts,', 'Asset Digitization,', 'Machine Learning,', 'Deep Learning,', 'Web3 Tools & APIs'];
+const blockchains = ['Ethereum,', 'Hyperledger Fabric,', 'Solana,', 'Polygon'];
+const languages = ['Javascript,', 'Python,', 'Solidity,', 'Go,', 'C++,', 'Nodejs,', 'Expressjs,', 'Reactjs,', 'React-Native,', 'Tensorflow,', 'Sklearn,', 'Keras,', 'NumPy,', 'SciPy,', 'MongoDB,', 'MySql,', 'Linux,', 'Windows'];
+const clouds = ['AWS,', 'Azure,', 'Google Cloud,', 'Digital Ocean,', 'Heroku,', 'NFT Storage,', 'IPFS,'];
+const others = ['Project Management,', 'Code Test Automation,', 'Google Analytics,'];
+const interests = ['Blockchain,', "Metaverse,", "IoT,", 'Supply chain,', 'Smart Agriculture']
 
 function About() {
+    const [develomentArr, setMyArray] = useState(['Blockchain & Digital Currencies', 'Smart Contracts', 'Asset Digitization', 'Machine Learning', 'Deep Learning', 'Web3 Tools & APIs']);
     return (
         <div className='about_main_c'>
             <div className='p-p'>
@@ -17,169 +24,115 @@ function About() {
                 </div>
                 <div className='first_lines'>
                     <p>
-                        Software Engineer 🚀
+                        Researcher, Blockchain Developer, Web3 API Developer 🚀
                     </p>
                 </div>
                 <div>
                     <p>
-                        Hi, my name is Mohammad Mohsin Sheraz and i'm a self tought developer. I'm Graduated from Government College University of Faisalabad, Punjab , Pakistan
-                        I linke to build new project in Javascript and C++ and also share what i have learned throughout my career as a developer to other people.
-                        Programming is my passion and I love to code. I'm alwayas looking for opportunities in the field of Computer Science and Technology.
-                        Outside of Programming I like to travel, hiking, badminton, making new friends, exploring culture of other countries and
-                        planting trees 🌴.
+                        Hey there! I'm Muhammad Mohsan Sheeraz, a self-taught developer living in Australia. I love learning new things, especially when it comes to technology! <br />
+
+                        I'm using this blog to keep track of my journey as I build my career in technology. Right now, I'm studying for my PhD at Charles Sturt University, following Masters at Inje University in South Korea.
+
+                        I enjoy solving real-world problems with coding. It's my passion! I'm always looking for ways to learn and grow in the world of computers and technology.<br />
+
+                        When I'm not coding, I like to explore the outdoors, travel, play badminton, and make new friends. I also care about the environment and love planting trees.
+
+                        Come along with me on this exciting adventure, where every challenge is a chance to learn and grow! 🌴. <br />
+                        <br />
+                        <span className='my_message'>"Let's spread kindness and love wherever we go. Life is too short to waste on spreading hate and negativity. Together, let's make the world a brighter and happier place for everyone" ♥️</span>
 
                     </p>
                 </div>
             </div>
-            <div>
+            <div className='main_skills'>
                 <div className='Title_container_ab'>
                     <h1>
-                        Work Flow
+                        Skills
                     </h1>
                 </div>
-                <div>
-                    <h2  className='h2-'>Computer</h2>
+                {/* <div>
+                    <h2 className='h2-'>Computer</h2>
                     <p>Dell Latitude 6225</p>
-                </div>
-                <div>
+                </div> */}
+                <div className='details_skill'>
                     <h2 className='h2-'>
-                        Technologies 👨🏾‍💻 
+                        Development 👨🏾‍💻
                     </h2>
-                    <p><ul className='change_style'>
-                        <li>
-                            C++
-                        </li>
-                        <li>
-                        Paython
-                        </li>
-                        <li>
-                            JavaScript
-                        </li>
-                        <li>
-                            React
-                        </li>
-                        <li>
-                            Redux
-                        </li>
-                        <li>
-                            NodeJs
-                        </li>
-                        <li>
-                            Express
-                        </li>
-                        <li>
-                            MongoDB
-                        </li>
-                        <li>
-                            SQL
-                        </li>
-
-                    </ul></p>
-                </div>
-            </div>
-            <div>
-                <div>
-
-                    <h2  className='h2-'>
-                        Clouds
-                </h2>
                     <p>
                         <ul className='change_style'>
-                            <li>
-                                AWS
-                        </li>
-                            <li>
-                                Heroku
-                        </li>
-                            <li>
-                                Firebase
-                        </li>
-                            <li>
-                                MongoDB Altas
-                        </li>
+                            {development.map(item => {
+                                return <li key={item}>{item}</li>
+                            })}
                         </ul>
                     </p>
                 </div>
 
-            </div>
+                <div className='details_skill'>
+                    <h2 className='h2-'>
+                        Blockchains
+                    </h2>
+                    <p>
+                        <ul className='change_style'>
+                            {blockchains.map(item => {
+                                return <li key={item}>{item}</li>
+                            })}
+                        </ul>
+                    </p>
+                </div>
 
-            <div>
+                <div className='details_skill'>
+                    <h2 className='h2-'>
+                        Programming Languages, Libraries & OS
+                    </h2>
+                    <p>
+                        <ul className='change_style'>
+                            {languages.map(item => {
+                                return <li key={item}>{item}</li>
+                            })}
+                        </ul>
+                    </p>
+                </div>
+
+                <div className='details_skill'>
+                    <h2 className='h2-'>
+                        Clouds
+                    </h2>
+                    <p>
+                        <ul className='change_style'>
+                            {clouds.map(item => {
+                                return <li key={item}>{item}</li>
+                            })}
+                        </ul>
+                    </p>
+                </div>
+
+                <div className='details_skill'>
+                    <h2 className='h2-'>
+                        Other Skills
+                    </h2>
+                    <p>
+                        <ul className='change_style'>
+                            {others.map(item => {
+                                return <li key={item}>{item}</li>
+                            })}
+                        </ul>
+                    </p>
+                </div>
+
+
                 <div className='Title_container_ab'>
                     <h1>
                         Interests
-                </h1>
+                    </h1>
                 </div>
                 <div>
-
                     <p>
                         <ul className='change_style'>
-                            <li>
-                                BlockChain
-                        </li>
-                            <li>
-                                Cloud Computing
-                        </li>
-                            <li>
-                                AI
-                        </li>
-                            <li>
-                                Robotic
-                        </li>
-                            <li>
-                                IoT
-                        </li>
-                            <li>
-                                Cyber Security
-                            </li>
-                            <li>
-                                Digital Forensic
-                         </li>
+                            {interests.map(item => {
+                                return <li key={item}>{item}</li>
+                            })}
                         </ul>
                     </p>
-                </div>
-                <div>
-                    <div className='Title_container_ab'>
-
-                        <h1>
-                            Hobbies
-                </h1>
-                    </div>
-                           <div className='hobbies'> 
-                        
-                    
-                        <p>
-
-                        <ul>
-                            <li>
-                                Learning New Programming Technologies
-                    </li>
-                            <li>
-                                Teaching
-                        </li>
-                            <li>
-                                Hiking
-                    </li>
-                            <li>
-                                Travelling
-                    </li>
-                            <li>
-                                Making New Friends
-                        </li>
-                            <li>
-                                Exploring Culture of other Countries
-                    </li>
-                            <li>
-                                Playing Badminton
-                    </li>
-                            <li>
-                                Planting Trees
-                    </li>
-                        </ul>
-                        </p>
-
-                   
-                    </div>
-
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
-// import {  } from 'antd';
+// import {   } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
 
 class Blog extends React.Component {
     render() {
@@ -7,13 +8,12 @@ class Blog extends React.Component {
             <div>
                 <div className='Title_container_ab , first_lines'>
                     <h1 >
-                        Pardon please, Blog is under Development
+                        Blog is under Development
                     </h1>
                 </div>
                 <div className='Title_container_ab , first_lines'>
                     <h1>
-
-                        {/* <Icon type="loading" /> */}
+                        <LoadingOutlined />
                     </h1>
                 </div>
             </div>
