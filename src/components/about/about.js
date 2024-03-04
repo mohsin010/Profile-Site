@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './about.css';
-import pp from '../../data/0.jpg';
+import pp from '../../data/0.png';
 
 const development = ['Blockchain & Digital Currencies,', 'Smart Contracts,', 'Asset Digitization,', 'Machine Learning,', 'Deep Learning,', 'Web3 Tools & APIs'];
 const blockchains = ['Ethereum,', 'Hyperledger Fabric,', 'Solana,', 'Polygon'];
