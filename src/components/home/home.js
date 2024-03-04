@@ -48,7 +48,7 @@ class Home extends React.Component {
                 <div id='title_container'>
                     <div>
                         <h1 id='title_txt' className='theme_color'>
-                            Software Engineer
+                            Software Developer
                         </h1>
                     </div>
                     <div>

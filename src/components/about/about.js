@@ -35,7 +35,7 @@ function About() {
 
                         I enjoy solving real-world problems with coding. It's my passion! I'm always looking for ways to learn and grow in the world of computers and technology.<br />
 
-                        When I'm not coding, I like to explore the outdoors, travel, play badminton, and make new friends. I also care about the environment and love planting trees.
+                        When I'm not coding, I like to explore the outdoors, travel, play badminton, and make new friends. I do care about the environment, I love planting trees, try to avoid plastic usage and water waste.
 
                         Come along with me on this exciting adventure, where every challenge is a chance to learn and grow! 🌴. <br />
                         <br />
